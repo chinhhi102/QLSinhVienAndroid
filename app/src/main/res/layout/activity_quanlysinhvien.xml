@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgrau2"
+    tools:context=".Quanlysinhvien">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From Quản Lý Sinh Viên"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#FF0000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:padding="30dp"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Student code"
+            android:selectAllOnFocus="false"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Student name"
+            android:inputType="textAutoComplete"
+            android:selectAllOnFocus="false"
+            android:textColorHint="#000000"
+            android:id="@+id/tensv"/>
+
+        <EditText
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Student code"
+            android:selectAllOnFocus="false"
+            android:textColorHint="#000000"
+            android:id="@+id/masv"/>
+
+        <EditText
+
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Age"
+            android:inputType="number"
+            android:selectAllOnFocus="false"
+            android:textColorHint="#000000"
+            android:id="@+id/age"/>
+        <EditText
+
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="false"
+            android:textColorHint="#000000"
+            android:id="@+id/email"/>
+        <EditText
+
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:selectAllOnFocus="false"
+            android:textColorHint="#000000"
+            android:id="@+id/phone"/>
+        <EditText
+
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Address"
+            android:selectAllOnFocus="false"
+            android:textColorHint="#000000"
+            android:id="@+id/address"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Count : "
+            android:textStyle="bold"
+            android:id="@+id/tvcount2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:weightSum="4">
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textSize="17dp"
+            android:textColor="#0000FF"
+            android:id="@+id/btnadd2"/>
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#0000FF"
+            android:textSize="17dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btnedit2"/>
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#0000FF"
+            android:textSize="17dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btndelete2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lsView2"></ListView>
+    </LinearLayout>
+</LinearLayout>
